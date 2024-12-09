@@ -13,22 +13,6 @@ int main(int argc, char const *argv[])
     filterData filter;
     calculateData cal;
     trainingModel train;
-    // 声明变量
-    // 存放电流数据的三维容器()
-    std::vector<std::vector<std::vector<double>>> CurrentDatas1;
-    std::vector<std::vector<std::vector<double>>> CurrentDatas2;
-    std::vector<std::vector<std::vector<double>>> CurrentDatas3;
-    // 电流均值容器
-    std::vector<double> currentMean1;
-    std::vector<double> currentMean2;
-    std::vector<double> currentMean3;
-    // 准备训练数据
-    vector<double> trainingCurrents;
-    vector<double> trainingWeights;
-    // 滤波容器
-    std::vector<std::vector<std::vector<double>>> filterdata1;
-    std::vector<std::vector<std::vector<double>>> filterdata2;
-    std::vector<std::vector<std::vector<double>>> filterdata3;
 
     // 功能选择
     std::cout << "===================================" << std::endl;

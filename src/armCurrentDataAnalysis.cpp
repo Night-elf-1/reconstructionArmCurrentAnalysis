@@ -1,5 +1,22 @@
 #include "armCurrentDataAnalysis.hpp"
 
+// 声明变量
+// 存放电流数据的三维容器()
+std::vector<std::vector<std::vector<double>>> CurrentDatas1;
+std::vector<std::vector<std::vector<double>>> CurrentDatas2;
+std::vector<std::vector<std::vector<double>>> CurrentDatas3;
+// 电流均值容器
+std::vector<double> currentMean1;
+std::vector<double> currentMean2;
+std::vector<double> currentMean3;
+// 准备训练数据
+vector<double> trainingCurrents;
+vector<double> trainingWeights;
+// 滤波容器
+std::vector<std::vector<std::vector<double>>> filterdata1;
+std::vector<std::vector<std::vector<double>>> filterdata2;
+std::vector<std::vector<std::vector<double>>> filterdata3;
+
 // ================================== extractData ==================================
 std::vector<std::string> extractData::split(const std::string& s, char delimiter){
     std::vector<std::string> tokens;

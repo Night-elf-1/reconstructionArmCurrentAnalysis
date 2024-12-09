@@ -16,6 +16,23 @@ namespace plt = matplotlibcpp;
 using namespace std;
 using namespace Eigen;
 
+// 声明变量
+// 存放电流数据的三维容器()
+extern std::vector<std::vector<std::vector<double>>> CurrentDatas1;
+extern std::vector<std::vector<std::vector<double>>> CurrentDatas2;
+extern std::vector<std::vector<std::vector<double>>> CurrentDatas3;
+// 电流均值容器
+extern std::vector<double> currentMean1;
+extern std::vector<double> currentMean2;
+extern std::vector<double> currentMean3;
+// 准备训练数据
+extern vector<double> trainingCurrents;
+extern vector<double> trainingWeights;
+// 滤波容器
+extern std::vector<std::vector<std::vector<double>>> filterdata1;
+extern std::vector<std::vector<std::vector<double>>> filterdata2;
+extern std::vector<std::vector<std::vector<double>>> filterdata3;
+
 class extractData{                              // 从txt文件中提取数据类
     public:
         extractData(){}
